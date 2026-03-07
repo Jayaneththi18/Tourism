@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DreamTourSri Lanka</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='../index.html'">🗺️ DreamTourSri Lanka</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="auth-buttons" id="authButtons">
+                <button class="btn-login" onclick="location.href='../auth/login.php'">Login</button>
+                <button class="btn-signup" onclick="location.href='../auth/register.php'">Sign Up</button>
+            </div>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p class="contact-subtitle">We'd love to hear from you! Get in touch with us for any inquiries.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon"></div>
+                        <h3>Our Location</h3>
+                        <p>123 Galle Road<br>Colombo 03, Sri Lanka</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"></div>
+                        <h3>Phone</h3>
+                        <p>+94 11 234 5678<br>+94 77 123 4567</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"></div>
+                        <h3>Email</h3>
+                        <p>info@dreamtoursrilanka.com<br>support@dreamtoursrilanka.com</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"></div>
+                        <h3>Working Hours</h3>
+                        <p>Monday - Saturday<br>9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <div id="contactAlert"></div>
+
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                        <div class="form-group">
+                            <label for="contactName">Your Name</label>
+                            <input type="text" id="contactName" name="name" required placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" name="email" required placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" name="subject" required placeholder="Enter subject">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" name="message" rows="5" required
+                                placeholder="Enter your message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>DreamTourSri Lanka - Your gateway to unforgettable Sri Lankan experiences.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="../index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📍 123 Galle Road, Colombo 03, Sri Lanka</p>
+                <p>📞 +94 11 234 5678</p>
+                <p>📧 info@dreamtoursrilanka.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DreamTourSri Lanka. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+
+</html>

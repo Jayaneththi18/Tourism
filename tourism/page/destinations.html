@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - DreamTourSri Lanka</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='../index.html'">🗺️ DreamTourSri Lanka</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons" id="authButtons">
+                <button class="btn-login" onclick="location.href='../auth/login.php'">Login</button>
+                <button class="btn-signup" onclick="location.href='../auth/register.php'">Sign Up</button>
+            </div>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
+        </div>
+    </nav>
+    <section class="features">
+        <h1 style="text-align: center; margin-bottom: 1rem;">Top Destinations in Sri Lanka</h1>
+        <p style="text-align: center; color: #6b7280; margin-bottom: 3rem;">Explore the most beautiful and captivating
+            places in Sri Lanka</p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1612862862126-865765df2ded?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2lnaXJpeWF8ZW58MHx8MHx8fDA%3D"
+                    alt="Sigiriya" class="destination-image">
+                <h3>Sigiriya Rock Fortress</h3>
+                <p>Ancient rock fortress with stunning frescoes and panoramic views. A UNESCO World Heritage Site dating
+                    back to the 5th century.</p>
+                <div class="destination-info">
+                    <p><strong>📍 Location:</strong> Central Province</p>
+                    <p><strong>Highlights:</strong> Ancient palace ruins, frescoes, gardens</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWxsYXxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="Ella" class="destination-image">
+                <h3>Ella</h3>
+                <p>Scenic hill country town surrounded by tea plantations, waterfalls, and stunning mountain views.</p>
+                <div class="destination-info">
+                    <p><strong>📍 Location:</strong> Uva Province</p>
+                    <p><strong>Highlights:</strong> Nine Arch Bridge, Little Adams Peak, Ravana Falls</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400" alt="Mirissa"
+                    class="destination-image">
+                <h3>Mirissa Beach</h3>
+                <p>Beautiful beach perfect for whale watching, surfing, and enjoying pristine golden sands.</p>
+                <div class="destination-info">
+                    <p><strong>📍 Location:</strong> Southern Province</p>
+                    <p><strong>Highlights:</strong> Blue whale watching, surfing, beach parties</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1665849050332-8d5d7e59afb6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2FuZHl8ZW58MHx8MHx8fDA%3D"
+                    alt="Kandy" class="destination-image">
+                <h3>Kandy</h3>
+                <p>The cultural capital of Sri Lanka, home to the sacred Temple of the Tooth and beautiful Kandy Lake.
+                </p>
+                <div class="destination-info">
+                    <p><strong>📍 Location:</strong> Central Province</p>
+                    <p><strong>Highlights:</strong> Temple of the Tooth, Kandy Lake, cultural shows</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400" alt="Yala"
+                    class="destination-image">
+                <h3>Yala National Park</h3>
+                <p>Premier wildlife safari destination with the highest density of leopards in the world.</p>
+                <div class="destination-info">
+                    <p><strong>📍 Location:</strong> Southern Province</p>
+                    <p><strong>Highlights:</strong> Leopards, elephants, diverse wildlife</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1568843240915-b512cc9b4415?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FsbGUlMjBmb3J0fGVufDB8fDB8fHww"
+                    alt="Galle" class="destination-image">
+                <h3>Galle Fort</h3>
+                <p>Historic Dutch colonial fort with well-preserved architecture, museums, and charming cafes.</p>
+                <div class="destination-info">
+                    <p><strong>📍 Location:</strong> Southern Province</p>
+                    <p><strong>Highlights:</strong> Colonial architecture, lighthouse, museums</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>DreamTourSri Lanka - Your gateway to unforgettable Sri Lankan experiences.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="../index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📍 123 Galle Road, Colombo 03, Sri Lanka</p>
+                <p>📞 +94 11 234 5678</p>
+                <p>📧 info@dreamtoursrilanka.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DreamTourSri Lanka. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+
+</html>

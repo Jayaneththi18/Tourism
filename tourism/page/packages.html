@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages - DreamTourSri Lanka</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='../index.html'">🗺️ DreamTourSri Lanka</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html" class="active">Packages</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons" id="authButtons">
+                <button class="btn-login" onclick="location.href='../auth/login.php'">Login</button>
+                <button class="btn-signup" onclick="location.href='../auth/register.php'">Sign Up</button>
+            </div>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
+        </div>
+    </nav>
+
+    <section class="hero" style="height: 400px;">
+        <div class="hero-content">
+            <h1 style="font-size: 2.5rem;">Tour Packages</h1>
+            <p style="font-size: 1.2rem;">Choose from our carefully curated tour packages for an unforgettable
+                experience</p>
+        </div>
+    </section>
+
+    <section class="packages">
+        <div class="packages-container">
+            <h2>Available Tour Packages</h2>
+            <p style="text-align: center; color: #6b7280; margin-bottom: 3rem;">Explore Sri Lanka with our expertly
+                designed tour packages</p>
+
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Search packages by name or location..."
+                    onkeyup="searchPackages()">
+            </div>
+
+            <div class="packages-grid" id="packagesGrid">
+                <div class="package-card" data-name="cultural triangle tour" data-location="central province">
+                    <img src="https://plus.unsplash.com/premium_photo-1712366459284-2b564cc93a16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNyaSUyMGxhbmthfGVufDB8fDB8fHww"
+                        alt="Cultural Triangle" class="package-image">
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3 class="package-title">Cultural Triangle Tour</h3>
+                        </div>
+                        <p class="package-info">📍 Central Province | ⏱️ 5 Days / 4 Nights</p>
+                        <p class="package-description">Explore ancient cities and temples. Visit Anuradhapura,
+                            Polonnaruwa, and Sigiriya.</p>
+                        <div class="package-inclusions">
+                            <p class="inclusions-list">✓ Hotel ✓ Meals ✓ Guide ✓ Transport</p>
+                        </div>
+                        <div class="package-footer">
+                            <button class="btn-book" onclick="showAuthModal()">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="package-card" data-name="beach paradise getaway" data-location="southern coast">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" alt="Beach Paradise"
+                        class="package-image">
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3 class="package-title">Beach Paradise Getaway</h3>
+                        </div>
+                        <p class="package-info">📍 Southern Coast | ⏱️ 4 Days / 3 Nights</p>
+                        <p class="package-description">Relax on beautiful beaches. Enjoy Mirissa, Unawatuna, and
+                            Bentota.</p>
+                        <div class="package-inclusions">
+                            <p class="inclusions-list">✓ Beach Hotel ✓ All Meals ✓ Water Sports</p>
+                        </div>
+                        <div class="package-footer">
+                            <button class="btn-book" onclick="showAuthModal()">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="package-card" data-name="hill country adventure" data-location="nuwara eliya">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Hill Country"
+                        class="package-image">
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3 class="package-title">Hill Country Adventure</h3>
+                        </div>
+                        <p class="package-info">📍 Nuwara Eliya | ⏱️ 6 Days / 5 Nights</p>
+                        <p class="package-description">Experience tea plantations and cool mountains. Visit waterfalls
+                            and scenic areas.</p>
+                        <div class="package-inclusions">
+                            <p class="inclusions-list">✓ Hotel ✓ All Meals ✓ Tea Tour ✓ Train Ride</p>
+                        </div>
+                        <div class="package-footer">
+                            <button class="btn-book" onclick="showAuthModal()">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="package-card" data-name="wildlife safari" data-location="yala">
+                    <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400" alt="Wildlife Safari"
+                        class="package-image">
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3 class="package-title">Wildlife Safari</h3>
+                        </div>
+                        <p class="package-info">📍 Yala | ⏱️ 3 Days / 2 Nights</p>
+                        <p class="package-description">See elephants, leopards, and birds. Safari adventure in Yala
+                            National Park.</p>
+                        <div class="package-inclusions">
+                            <p class="inclusions-list">✓ Safari Jeep ✓ Hotel ✓ All Meals ✓ Park Fees</p>
+                        </div>
+                        <div class="package-footer">
+                            <button class="btn-book" onclick="showAuthModal()">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="package-card" data-name="complete sri lanka" data-location="island wide">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400"
+                        alt="Complete Sri Lanka" class="package-image">
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3 class="package-title">Complete Sri Lanka</h3>
+                        </div>
+                        <p class="package-info">📍 Island Wide | ⏱️ 12 Days / 11 Nights</p>
+                        <p class="package-description">Full tour of Sri Lanka. See beaches, mountains, temples, and
+                            wildlife.</p>
+                        <div class="package-inclusions">
+                            <p class="inclusions-list">✓ All Hotels ✓ All Meals ✓ Full Transport ✓ All Activities</p>
+                        </div>
+                        <div class="package-footer">
+                            <button class="btn-book" onclick="showAuthModal()">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features"
+        style="background: linear-gradient(135deg, #059669 0%, #0d9488 100%); padding: 4rem 2rem;">
+        <div style="text-align: center; color: white;">
+            <h2 style="color: white; margin-bottom: 1rem;">Can't Find What You're Looking For?</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">We offer custom tour packages tailored to
+                your preferences and budget</p>
+            <a href="contact.html" class="btn-primary" style="background: white; color: #059669;">Contact Us for Custom
+                Package</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>DreamTourSri Lanka - Your gateway to unforgettable Sri Lankan experiences since 2009.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="../index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📍 123 Galle Road, Colombo 03, Sri Lanka</p>
+                <p>📞 +94 11 234 5678</p>
+                <p>📧 info@dreamtoursrilanka.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DreamTourSri Lanka. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="authModal" class="auth-modal">
+        <div class="auth-modal-content">
+            <button class="auth-modal-close" onclick="closeAuthModal()">&times;</button>
+            <div class="auth-modal-header">
+                <h2>Ready to Book?</h2>
+                <p>Please login or create an account to continue</p>
+            </div>
+            <div class="auth-modal-buttons">
+                <a href="../auth/login.php" class="auth-modal-btn auth-modal-btn-login">Login to My Account</a>
+                <div class="auth-modal-divider">or</div>
+                <a href="../auth/register.php" class="auth-modal-btn auth-modal-btn-signup">Create New Account</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../main.js"></script>
+    <script>
+        function searchPackages() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const grid = document.getElementById('packagesGrid');
+            const cards = grid.getElementsByClassName('package-card');
+
+            for (let i = 0; i < cards.length; i++) {
+                const name = cards[i].getAttribute('data-name');
+                const location = cards[i].getAttribute('data-location');
+
+                if (name.includes(filter) || location.includes(filter)) {
+                    cards[i].style.display = '';
+                } else {
+                    cards[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

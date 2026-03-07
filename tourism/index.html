@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamTourSri Lanka - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='index.html'">🗺️ DreamTourSri Lanka</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="page/destinations.html">Destinations</a></li>
+                <li><a href="page/packages.html">Packages</a></li>
+                <li><a href="page/about.html">About</a></li>
+                <li><a href="page/contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons" id="authButtons">
+                <button class="btn-login" onclick="location.href='auth/login.php'">Login</button>
+                <button class="btn-signup" onclick="location.href='auth/register.php'">Sign Up</button>
+            </div>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
+        </div>
+    </nav>
+
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Paradise in Sri Lanka</h1>
+            <p>Experience the pearl of the Indian Ocean with our curated tour packages</p>
+
+            <button class="btn-primary" onclick="showAuthModal()">
+                Explore Our Packages
+            </button>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <h2>Why Choose DreamTour Sri Lanka?</h2>
+        <div class="benefit-box">
+            <div class="card">
+                <h3>Affordable Prices</h3>
+                <p>Best travel packages at competitive prices.</p>
+            </div>
+
+            <div class="card">
+                <h3>Experienced Guides</h3>
+                <p>Friendly and professional local tour guides.</p>
+            </div>
+
+            <div class="card">
+                <h3>24/7 Support</h3>
+                <p>We are always available for your assistance.</p>
+            </div>
+
+            <div class="card">
+                <h3>Custom Packages</h3>
+                <p>Personalized tours based on your preferences.</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="why-section">
+        <div class="why-container">
+
+            <div class="why-image">
+                <img src="https://media.istockphoto.com/id/505221662/photo/elephants-in-river.webp?a=1&b=1&s=612x612&w=0&k=20&c=yApLmVuT4P5Qt4AeQU1YcLYBMdvzJEQjYKpdwJBaIvU="
+                    alt="Sri Lanka Nature">
+            </div>
+
+            <div class="why-content">
+                <h2>Why Choose Sri Lanka?</h2>
+                <p>
+                    Sri Lanka offers beautiful beaches, rich culture, wildlife safaris,
+                    tea plantations and delicious cuisine — all in one island.
+                </p>
+
+                <ul>
+                    <li>Stunning tropical beaches</li>
+                    <li>Ancient heritage sites</li>
+                    <li>Wildlife & adventure</li>
+                </ul>
+            </div>
+
+            <div class="why-image">
+                <img src="https://media.istockphoto.com/id/1402466889/photo/aerial-view-of-mirissa-sri-lanka.webp?a=1&b=1&s=612x612&w=0&k=20&c=qIytDtTb_dZ0ix66wBaQWD9stN_LFGOU6cCqYSO0r8g="
+                    alt="Sri Lanka Beach">
+            </div>
+
+        </div>
+    </section>
+
+ 
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>DreamTourSri Lanka - Your gateway to unforgettable Sri Lankan experiences since 2009.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="page/destinations.html">Destinations</a>
+                <a href="page/packages.html">Packages</a>
+                <a href="page/about.html">About</a>
+                <a href="page/contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📍 123 Galle Road, Colombo 03, Sri Lanka</p>
+                <p>📞 +94 11 234 5678</p>
+                <p>📧 info@dreamtoursrilanka.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DreamTourSri Lanka. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+    <div id="authModal" class="auth-modal">
+        <div class="auth-modal-content">
+            <button class="auth-modal-close" onclick="closeAuthModal()">&times;</button>
+            <div class="auth-modal-header">
+                <h2>Ready to Explore?</h2>
+                <p>Please login or create an account to continue</p>
+            </div>
+            <div class="auth-modal-buttons">
+                <a href="auth/login.php" class="auth-modal-btn auth-modal-btn-login">Login to My Account</a>
+                <div class="auth-modal-divider">or</div>
+                <a href="auth/register.php" class="auth-modal-btn auth-modal-btn-signup">Create New Account</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
