@@ -1,2 +1,2 @@
 # Tourism
-DreamTour Sri Lanka is a full-stack tourism management web application designed to provide an interactive platform for users to explore travel destinations, browse tour packages, and communicate with travel service providers. The system also includes an administrative backend for managing users and tourism content efficiently.
+DreamTour Sri Lanka is a dynamic tourism web application designed to allow users to discover travel destinations, explore tour packages, and interact with tourism services in a seamless digital environment. The system integrates secure authentication, user dashboards, backend management, and database-driven functionality to create a scalable tourism platform.
