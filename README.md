@@ -72,7 +72,7 @@ For the Backend
 # ⚙ Installation Guide
 
 # Clone Repository
-git clone https://github.com/Jayaneththi18/dreamtour-srilanka.git
+git clone [https://github.com/Jayaneththi18/dreamtour-srilanka.git](https://github.com/Jayaneththi18/Tourism)
 
 # Setup Local Server
 Move project to:
