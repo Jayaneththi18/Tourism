@@ -83,7 +83,7 @@ wamp/www/
 # Setup Database
  Open phpMyAdmin
 
-Create database:
+# Create database:
   tourism_db
 
 Import SQL file:
